@@ -1,12 +1,12 @@
-package Ex02;
+package listapoo.Ex01;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        GerenciadorCandidatos gerenciadorCandidatos = new GerenciadorCandidatos();
         Scanner entrada = new Scanner(System.in);
+        Gerenciador gerenciador = new Gerenciador();
 
         boolean rodando = true;
 
@@ -14,22 +14,22 @@ public class Main {
             System.out.println();
             System.out.println("O que você deseja fazer?");
             System.out.println();
-            System.out.println("1- Adicionar candidato");
-            System.out.println("2- Exibir candidatos cadastrados");
-            System.out.println("3- Remover um candidato pelo número de matrícula");
+            System.out.println("1- Adicionar produto");
+            System.out.println("2- Exibir produtos cadastrados");
+            System.out.println("3- Remover um produto pelo nome");
             System.out.println("4- Sair");
 
             int opcao = entrada.nextInt();
 
             switch (opcao) {
                 case 1:
-                    gerenciadorCandidatos.adicionarCandidato(entrada);
+                    gerenciador.adicionarProduto(entrada);
                     break;
                 case 2:
-                    gerenciadorCandidatos.exibirCandidatos();
+                    gerenciador.exibirProdutos();
                     break;
                 case 3:
-                    gerenciadorCandidatos.removerCandidato(entrada);
+                    gerenciador.removerProduto(entrada);
                     break;
                 case 4:
                     rodando = false;

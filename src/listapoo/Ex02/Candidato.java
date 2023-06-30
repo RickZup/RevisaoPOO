@@ -1,4 +1,4 @@
-package Ex02;
+package listapoo.Ex02;
 
 public class Candidato {
 

@@ -1,4 +1,4 @@
-package Ex01;
+package listapoo.Ex01;
 
 public class Produto {
 
